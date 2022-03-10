@@ -108,14 +108,3 @@ if st.session_state.uploaded_file_:
                             uploaded_image = st.session_state.uploaded_image
                         )
                         st.write("Thank you for that, we'll use your help to make our model better!")
-                        
-
-
-
-                    
-                
-
-                
-
-        
-
