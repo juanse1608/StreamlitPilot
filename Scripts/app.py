@@ -1,4 +1,5 @@
 # Libraries
+from turtle import update
 import streamlit as st
 import tensorflow as tf
 import numpy as np
@@ -70,7 +71,7 @@ img_descriptor = load_model('Data/Objects/parameters.json', 'Data/Model/', 'Data
 uploaded_file = st.file_uploader(label="Upload Image", type=["png", "jpeg", "jpg"], key='uploaded_file', on_change=uploaded_file_change)
 if st.session_state.uploaded_file_:
     # Read and save image
-    if st.session_state.uploaded_image is not None:
+    if uploaded_file is not None:
         st.session_state.uploaded_image = uploaded_file.read()
         st.image(st.session_state.uploaded_image, use_column_width=True)
 
