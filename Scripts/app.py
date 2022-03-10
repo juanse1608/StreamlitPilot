@@ -1,6 +1,4 @@
 # Libraries
-import gc
-from pytest import Session
 import streamlit as st
 import tensorflow as tf
 import numpy as np
