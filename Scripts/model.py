@@ -184,7 +184,7 @@ class ImageDescriptor():
         len_result = len(result)
         for i in range(len_result-1):
             temp_att = np.resize(attention_plot[i], (2**3,2**3))
-            grid_size = max(np.ceil(len_result/2), 4)
+            grid_size = int(max([np.ceil(len_result/2), 4]))
             ax = fig.add_subplot(grid_size, grid_size, i+1)
             ax.set_title(result[i].title())
             img = ax.imshow(temp_image)
