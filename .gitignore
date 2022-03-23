@@ -131,3 +131,5 @@ dmypy.json
 # Credentials
 Data/Objects/credentials.json
 */credentials.json
+.DS_Store
+.DS_store

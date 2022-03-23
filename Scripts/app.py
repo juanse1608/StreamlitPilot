@@ -62,7 +62,7 @@ except:
     credentials = st.secrets["gcp_service_account"]
 gcp_user = init_gcp_user(credentials)
 st.title('Machine Learning Web App - Image Captioning')
-st.header("Click [here](https://github.com/juanse1608/AST-ImageCaptioning/blob/main/README.md) to know more about the project!")
+st.header("Click [here](https://github.com/juanse1608/StreamlitPilot/blob/main/README.md) to know more about the project!")
 
 # Ask for an image
 st.write('''Upload a photo and see the predicted caption for it''')
